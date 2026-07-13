@@ -6,9 +6,11 @@ st.title("the multiverse of chatbot")
 # if st.button("Submit"):
 #     st.write(user_message)
 
-personality=st.selectbox("Who do you want to talk to?",[
+personality=st.sidebar.selectbox("Who do you want to talk to?",[
     "Virat Kohli","Anushka sharma","Elvish","pritam and pedro"
 ])
+
+intensity=st.sidebar.slider("chooseee",min_value=1,max_value=10)
 from google import genai
 import os
 from dotenv import load_dotenv
